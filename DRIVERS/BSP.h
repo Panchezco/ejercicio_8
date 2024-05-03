@@ -34,6 +34,7 @@
 
 #define BOTON2    0x10
 #define BOTON1   0x02
+#define BOTON3   (0x0008) // pin 2.3
 
 /* Definición de led's plasmados en tarjeta con su respectivo puerto. */
 //Definiciones de pines para las funciones
