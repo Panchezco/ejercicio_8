@@ -34,11 +34,6 @@
 
 #define BOTON2    0x10
 #define BOTON1   0x02
-#define BOTON3   (0x0008)
-#define GPIO_PIN4    (0x0010)
-#define GPIO_PIN5    (0x0020)
-#define GPIO_PIN6    (0x0040)
-#define GPIO_PIN7    (0x0080)
 
 /* Definición de led's plasmados en tarjeta con su respectivo puerto. */
 //Definiciones de pines para las funciones

@@ -66,28 +66,28 @@ uint8_t Gpio_Pin_in( uint_fast16_t pin_)
 * Input: pin_.
 * Output: 0/1
 *****************************************************************************/
-uint8_t Gpio2_Pin_in( uint_fast16_t pin_)
-{
-uint_fast16_t inputPinValue;
-inputPinValue = PUERTO_P2->IN & (pin_);         // LEE EL REGISTRO QUE INDICA EL VALOR DE ENTRADA DE UN PIN
-if (inputPinValue > 0)                          // RETORNA EL VALOR 1 o 0
-return (0x01);
-return (0x00);
-}
+//uint8_t Gpio2_Pin_in( uint_fast16_t pin_)
+//{
+//uint_fast16_t inputPinValue;
+//inputPinValue = PUERTO_P2->IN & (pin_);         // LEE EL REGISTRO QUE INDICA EL VALOR DE ENTRADA DE UN PIN
+//if (inputPinValue > 0)                          // RETORNA EL VALOR 1 o 0
+//return (0x01);
+//return (0x00);
+//}
    // <-- E8
-void inicializar()
-{
-    GPIO_setPinEntradaconPullUp(PUERTO1,BOTON2 );                 //PIN P1.4 COMO ENTRADA
-      GPIO_setPinEntradaconPullUp(PUERTO1,BOTON1 );                 //PIN P1.1 COMO ENTRADA
-      GPIO_setPinEntradaconPullUp(PUERTO2,BOTON3);                 //PIN P1.1 COMO ENTRADA
-
-      GPIO_setPinSalida(PUERTO1,LEDROJO);
-      GPIO_setPinSalida(PUERTO2,  LEDROJO |  LEDVERDE | LEDAZUL );   // CONFIGURA PINES 2.0,2.1,2.2  COMO SALIDA (LEDS RGB)"
-      GPIO_setPinBajo(PUERTO2,  LEDROJO |  LEDVERDE | LEDAZUL );      // APAGADOS
-      GPIO_setPinBajo(PUERTO1,LEDROJO);
-
-
-}
+//void inicializar()
+//{
+//    GPIO_setPinEntradaconPullUp(PUERTO1,BOTON2 );                 //PIN P1.4 COMO ENTRADA
+//      GPIO_setPinEntradaconPullUp(PUERTO1,BOTON1 );                 //PIN P1.1 COMO ENTRADA
+//      GPIO_setPinEntradaconPullUp(PUERTO2,BOTON3);                 //PIN P1.1 COMO ENTRADA
+//
+//      GPIO_setPinSalida(PUERTO1,LEDROJO);
+//      GPIO_setPinSalida(PUERTO2,  LEDROJO |  LEDVERDE | LEDAZUL );   // CONFIGURA PINES 2.0,2.1,2.2  COMO SALIDA (LEDS RGB)"
+//      GPIO_setPinBajo(PUERTO2,  LEDROJO |  LEDVERDE | LEDAZUL );      // APAGADOS
+//      GPIO_setPinBajo(PUERTO1,LEDROJO);
+//
+//
+//}
 /******************************************************************************
  * Function: GPIO_setPinSalida
  * Preconditions: None.
